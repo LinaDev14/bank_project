@@ -23,5 +23,5 @@ public class Customer {
     private final TypeIdentification typeIdentification;
     private final String numberIdentification;
     private final TypePerson typePerson;
-    
+
 }
