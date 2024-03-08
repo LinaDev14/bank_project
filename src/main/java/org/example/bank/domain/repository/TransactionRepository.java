@@ -1,4 +1,7 @@
 package org.example.bank.domain.repository;
 
-public interface TransactionRepository {
+import org.example.bank.domain.collections.Transaction;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface TransactionRepository extends MongoRepository<Transaction, String> {
 }
