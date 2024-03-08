@@ -17,7 +17,8 @@ public class BankMapper {
                 bank.getPhone(),
                 bank.getCountry(),
                 bank.getBranchOffice(),
-                bank.getIdCustomer()
+                bank.getIdCustomer(),
+                bank.getStatus()
         );
     }
 
@@ -29,7 +30,8 @@ public class BankMapper {
                 bankDto.getPhone(),
                 bankDto.getCountry(),
                 bankDto.getBranchOffice(),
-                bankDto.getIdCustomer()
+                bankDto.getIdCustomer(),
+                bankDto.getStatus()
         );
     }
 }

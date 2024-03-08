@@ -21,4 +21,5 @@ public class AccountDto {
     private Integer balance;
     private Integer discount;
     private Integer discountedBalance;
+    private String IdTransaction;
 }

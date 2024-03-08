@@ -7,6 +7,9 @@ public enum Status {
     CLOSED,
     FROZEN,
     RESTRICTED,
-    SUSPENDED
+    SUSPENDED,
+
+    OPEN,
+    CLOSE
 
 }

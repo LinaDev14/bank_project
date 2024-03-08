@@ -19,7 +19,8 @@ public class AccountMapper {
                 account.getNumberAccount(),
                 account.getBalance(),
                 account.getDiscount(),
-                account.getDiscountedBalance()
+                account.getDiscountedBalance(),
+                account.getIdTransaction()
         );
     }
 
@@ -33,7 +34,8 @@ public class AccountMapper {
                     accountDto.getNumberAccount(),
                     accountDto.getBalance(),
                     accountDto.getDiscount(),
-                    accountDto.getDiscountedBalance()
+                    accountDto.getDiscountedBalance(),
+                    accountDto.getIdTransaction()
 
             );
     }

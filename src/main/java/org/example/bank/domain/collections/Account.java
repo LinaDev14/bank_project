@@ -20,4 +20,5 @@ public class Account {
     private final Integer balance;
     private final Integer discount;
     private final Integer discountedBalance;
+    private final String IdTransaction;
 }

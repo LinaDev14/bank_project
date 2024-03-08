@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.example.bank.domain.valueObjects.BranchOffice;
 import org.example.bank.domain.valueObjects.Country;
+import org.example.bank.domain.valueObjects.Status;
 
 
 @Data
@@ -18,4 +19,5 @@ public class BankDto {
     private Country country;
     private BranchOffice branchOffice;
     private String idCustomer;
+    private Status status;
 }
