@@ -7,8 +7,9 @@ import org.example.bank.domain.collections.Account;
 import org.example.bank.domain.valueObjects.Status;
 import org.example.bank.domain.valueObjects.TypeAccount;
 import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-
+@Repository
 public interface AccountRepository extends MongoRepository<Account, String> {
 
 }
