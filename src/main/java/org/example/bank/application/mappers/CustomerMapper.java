@@ -25,7 +25,7 @@ public class CustomerMapper {
                 customer.getIdAccount()
         );
     }
-    
+
     public Function<CustomerDto, Customer> mapToCollectionCustomer(){
 
         return customerDto -> new Customer(
