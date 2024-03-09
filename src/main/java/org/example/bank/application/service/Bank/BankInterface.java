@@ -23,12 +23,5 @@ public interface BankInterface {
     // find by branch Office
     List<BankDto> findByBranchOffice(BranchOffice branchOffice);
 
-    // find by Status
-    List<BankDto> findByStatus(Status status);
 
-    // find by status and country
-    List<BankDto> findByStatusAndCountry(Status status, Country country);
-
-    // find by Status and branch Office
-    List<BankDto> findByStatusAndBranchOffice(Status status, BranchOffice branchOffice);
 }

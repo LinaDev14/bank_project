@@ -4,11 +4,12 @@ import org.example.bank.domain.dto.TransactionDto;
 import org.example.bank.domain.valueObjects.TypeTransaction;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface TransactionInterface {
 
     // findById
-    TransactionDto findById(String id);
+    Optional<TransactionDto> findById(String id);
 
     // save all data
     List<TransactionDto> saveAllData(List<TransactionDto> transactionDto);
