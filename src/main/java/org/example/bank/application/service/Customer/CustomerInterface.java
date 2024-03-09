@@ -36,25 +36,10 @@ public interface CustomerInterface {
     List<CustomerDto> findByCustomerLastName(String lastName);
 
     // find by phone number
-    CustomerDto findByPhone(String phone);
-
-    // find by email
-    CustomerDto findByEmail(String email);
-
-    // find by age
-    List<CustomerDto> findByAge(String age);
-
-    // find by Type Identification
-    List<CustomerDto> findByTypeIdentification(TypeIdentification typeIdentification);
-
-    // find by number identification
-    CustomerDto findByNumberIdentification(String numberIdentification);
-
-    // find by type person
-    List<CustomerDto> findByTypePerson(TypePerson typePerson);
+    Optional<CustomerDto> findCustomerByPhone(String phone);
 
     // find customer by IdAccount
-    CustomerDto findByIdAccount(String idAccount);
+    Optional<CustomerDto> findByIdAccount(String idAccount);
 
 
 

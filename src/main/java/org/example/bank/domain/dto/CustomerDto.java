@@ -3,8 +3,11 @@ package org.example.bank.domain.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.bank.domain.collections.Customer;
 import org.example.bank.domain.valueObjects.TypeIdentification;
 import org.example.bank.domain.valueObjects.TypePerson;
+
+import java.util.function.Function;
 
 
 @Data
@@ -24,4 +27,5 @@ public class CustomerDto {
     private String numberIdentification;
     private TypePerson typePerson;
     private String IdAccount;
+
 }
