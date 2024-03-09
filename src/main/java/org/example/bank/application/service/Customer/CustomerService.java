@@ -69,7 +69,6 @@ public class CustomerService implements CustomerInterface{
         return customerMapper.mapToDtoCustomer()
                 .apply(savedCustomer);
 
-
     }
 
     @Override
@@ -104,7 +103,6 @@ public class CustomerService implements CustomerInterface{
                 .map(customerMapper.mapToDtoCustomer());
 
     }
-
     @Override
     public Optional<CustomerDto> findByIdAccount(String idAccount) {
         return customerRepository.findCustomerByIdAccount(idAccount)

@@ -5,6 +5,7 @@ import org.example.bank.domain.valueObjects.Status;
 import org.example.bank.domain.valueObjects.TypeAccount;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface AccountInterface {
 
@@ -18,7 +19,7 @@ public interface AccountInterface {
     List<AccountDto> fillData(List<AccountDto> accountDto);
 
     // find by id
-    AccountDto findById(String id);
+    Optional<AccountDto> findById(String id);
 
     // updated account
     AccountDto updateAccount(AccountDto accountDto);
@@ -30,6 +31,6 @@ public interface AccountInterface {
     List<AccountDto> findByTypeAccount(TypeAccount typeAccount);
 
     // find by number account
-    AccountDto findByAccountNumber(String numberAccount);
+    Optional<AccountDto> findByAccountNumber(String numberAccount);
 
 }
