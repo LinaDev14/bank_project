@@ -88,11 +88,5 @@ public class AccountService implements AccountInterface{
                 .collect(Collectors.toList());
     }
 
-    @Override
-    public Optional<AccountDto> findByAccountNumber(String numberAccount) {
-        return accountRepository.findByAccountNumber(numberAccount)
-                .map(accountMapper.mapToDtoAccount());
-    }
-
 
 }

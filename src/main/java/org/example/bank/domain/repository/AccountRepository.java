@@ -14,6 +14,5 @@ import java.util.Optional;
 @Repository
 public interface AccountRepository extends MongoRepository<Account, String> {
 
-    Optional<Account> findByAccountNumber(String numberAccount);
 
 }

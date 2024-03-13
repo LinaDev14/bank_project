@@ -30,7 +30,4 @@ public interface AccountInterface {
     // find by type account
     List<AccountDto> findByTypeAccount(TypeAccount typeAccount);
 
-    // find by number account
-    Optional<AccountDto> findByAccountNumber(String numberAccount);
-
 }
